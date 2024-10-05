@@ -1,0 +1,20 @@
+
+
+/* Type selector */
+button{
+    background-color: rgb(238, 255, 0);
+    color: white;
+}
+
+/* Class selector */
+.title{
+    background-color: rgb(0, 17, 255);
+    color: rgb(245, 245, 245);
+}
+
+/* ID selector */
+#content{
+    background-color: rgb(0, 255, 76);
+    color: rgb(245, 245, 245);
+}
+
