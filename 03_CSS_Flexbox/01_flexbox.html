@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 1</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+
+    <style>
+        .container{
+            display: flex; /* parent container needs this option to start using flexbox */
+            flex-direction: column;
+            border: 2px solid yellow;
+        }
+        .box{
+            width: 250px;
+            height: 150px;
+            border: 1px solid red;
+        }
+        #box1{
+            order: 3;
+        }
+        #box2{
+            order: 1;
+        }
+        #box3{
+            order: 2;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- container with items -->
+    <div class = "container">
+        <div id="box1" class="box"> Box 1</div>
+        <div id="box2" class="box"> Box 2</div>
+        <div id="box3" class="box"> Box 3</div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
