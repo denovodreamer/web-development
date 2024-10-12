@@ -8,20 +8,51 @@
 
   <!-- Shows every element's box in the HTML -->
   <style>
-    * {
-      border: 1px solid red !important;
+    #id1{
+      border: 2px solid red;
+      padding: 3px;
+      margin: 3px;
+      width: 700px;
+    }
+    #id2{
+      border: 2px solid rgb(158, 238, 67);
+      padding: 30px;
+      margin: 3px;
+    }
+    #id3{
+      border: 2px solid rgb(113, 67, 238);
+      padding: 3px;
+      margin: 3px;
+    }
+    #id4{
+      border: 2px solid rgb(252, 141, 37);
+      padding: 3px;
+      margin: 3px;
+    }
+    #id5{
+      border: 2px solid rgb(0, 0, 0);
+      padding: 3px;
+      margin: 3px;
+    }
+    #id6{
+      padding: 3px;
+      border: 2px solid rgb(229, 241, 58);
+      margin: 3px;
     }
   </style>
 
 </head>
 
-<body>
-  <div class="container">
-    <a href="https://google.com" target="_blank">This is a link</a>
+<body id="id1">
+
+  <div id="id2" class="container">
+    <a id="id3" href="https://google.com" target="_blank">This is a link</a>
   </div>
-  <div class=”container”>
-    <p> Welcome to <span>the show </span>! </p>
+
+  <div id="id4" class=”container”>
+    <p id="id5"> Welcome to <span id="id6">the show </span>! </p>
   </div>
+
 </body>
 
 </html>
