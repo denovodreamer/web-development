@@ -8,18 +8,21 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
 
     <style>
+        /* Parent element is called container */
         .container{
             display: flex; /* parent container needs this option to start using flexbox */
-            flex-direction: column;
+            flex-direction: row;  /* Parent property */
             border: 2px solid yellow;
         }
+
+        /* Children elements are called items */
         .box{
             width: 250px;
             height: 150px;
             border: 1px solid red;
         }
         #box1{
-            order: 3;
+            order: 3; /* Item property */
         }
         #box2{
             order: 1;
