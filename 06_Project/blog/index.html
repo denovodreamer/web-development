@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Blog</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+
+    <style>
+        body {
+            background: white;
+            font-size: 14px;
+        }
+
+        #typography {
+            text-align: start;
+            color: black;
+            width: 100%;
+            font-size: 1.0em;
+            line-height: 1.0em;
+            margin: auto;
+        }
+
+        .blog-preview{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            border: 5px solid rgb(221, 221, 221);
+            margin: 5px;
+
+            width: 200px;
+            height: 200px;
+        }
+
+        #blog-preview-grid{
+            display: grid;
+            grid-template-columns: 300px 300x;
+            grid-template-rows: 300px 300px;
+            grid-template-areas:
+                "b1 b2"
+                "b3 b4";
+            border: 5px solid rgba(4, 0, 255, 0.521);
+        }
+
+        #main-item{
+            display: flex;
+        }
+
+        #main-grid{
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr;
+            grid-template-rows: 0.5fr 0.5fr;
+            grid-template-areas:
+                "main-1 main-2"
+                "main-3 main-4";
+            border: 2px solid rgb(255, 0, 0);
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!--
+    
+    <div id="main-grid">
+
+        <nav class="main-item">
+            <h1><em>Blog Title</em></h1>
+            Navigation bar
+        </nav>
+
+        <footer class="main-item">
+            Footer
+        </footer>
+    </div>
+
+    -->
+
+
+    <div id="blog-preview-grid">
+        <div class="blog-preview">
+            <p>First blog!</p>
+            <p><a href="blog-1-link">Read More!</a></p>
+        </div>
+        <div class="blog-preview">
+            <p>Second blog!</p>
+            <p><a href="blog-1">Read More!</a></p>
+        </div>
+        <div class="blog-preview">
+            <p>Third blog!</p>
+            <p><a href="blog-1">Read More!</a></p>
+        </div>
+        <div class="blog-preview">
+            <p>Fourth blog!</p>
+            <p><a href="blog-1">Read More!</a></p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
