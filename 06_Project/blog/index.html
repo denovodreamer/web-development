@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
 
-    <title>Blog</title>
+    <title>Weather Forecasting</title>
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
 
@@ -23,43 +23,42 @@
             margin: auto;
         }
 
-        .blog-preview{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-
-            border: 5px solid rgb(221, 221, 221);
-            margin: 5px;
-
-            width: 200px;
-            height: 200px;
-        }
-
-        #blog-preview-grid{
+        #blog-preview-grid {
             display: grid;
-            grid-template-columns: 300px 300x;
-            grid-template-rows: 300px 300px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             grid-template-areas:
                 "b1 b2"
                 "b3 b4";
             border: 5px solid rgba(4, 0, 255, 0.521);
         }
 
-        #main-item{
+        .blog-preview {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            border: 2px solid rgb(221, 221, 221);
+            margin: 5px;
+
+            width: 1fr;
+            height: 200px;
+        }
+
+        #main-item {
             display: flex;
         }
 
-        #main-grid{
+        #main-grid {
             display: grid;
-            grid-template-columns: 0.5fr 0.5fr;
-            grid-template-rows: 0.5fr 0.5fr;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             grid-template-areas:
                 "main-1 main-2"
                 "main-3 main-4";
             border: 2px solid rgb(255, 0, 0);
         }
-
     </style>
 
 </head>
@@ -68,7 +67,7 @@
 <body>
 
     <!--
-    
+
     <div id="main-grid">
 
         <nav class="main-item">
@@ -83,11 +82,14 @@
 
     -->
 
+    <h1>Weather Forecasting</h1>
+
+    <h2 style="color: #777777;">Articles</h2>
 
     <div id="blog-preview-grid">
         <div class="blog-preview">
             <p>First blog!</p>
-            <p><a href="blog-1-link">Read More!</a></p>
+            <p><a href="blog-1">Read More!</a></p>
         </div>
         <div class="blog-preview">
             <p>Second blog!</p>
@@ -102,9 +104,6 @@
             <p><a href="blog-1">Read More!</a></p>
         </div>
     </div>
-
-
-
 
 </body>
 
