@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Weather Forecasting</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+
+    <style>
+
+        body{
+            background: white;
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+
+        .main-grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                "header"
+                "picture"
+                "blogs"
+                "footer";
+            border: 2px solid rgb(255, 0, 0);
+        }
+
+        .header{
+            grid-area: "header";
+        }
+
+        .blogs{
+            grid-area: "blogs";
+        }
+
+        .picture{
+            grid-area: "picture";
+        }
+
+        .footer{
+            grid-area: "footer";
+        }
+
+        .main-item{
+            display: flex;
+            border: 3px solid blue;
+            flex-direction: row;
+        }
+
+        #weather-image{
+            background-image: url("assets/noaa.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 500px;
+       }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="main-grid">
+
+        <div class="header main-item">
+            <h1>The Science of Weather Forecasting: Techniques, Models, and Tools</h1>
+        </div>
+
+        <div id="weather-image" class="picture main-item"></div>
+
+        <div class="blogs main-item"></div>
+
+        <div class="footer main-item">Footer</div>
+    </div>
+
+</body>
+
+</html>

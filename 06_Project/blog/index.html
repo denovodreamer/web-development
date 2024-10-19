@@ -12,24 +12,66 @@
         body {
             background: white;
             font-size: 14px;
+            font-family: sans-serif;
         }
 
-        #typography {
-            text-align: start;
-            color: black;
-            width: 100%;
-            font-size: 1.0em;
-            line-height: 1.0em;
-            margin: auto;
+
+
+        /* Display Grid */
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas:
+                "header"
+                "picture"
+                "blogs"
+                "footer";
+            border: 2px solid rgb(255, 0, 0);
         }
+
+        .header {
+            grid-area: "header";
+        }
+
+        .blogs {
+            grid-area: "blogs";
+        }
+
+        .picture {
+            grid-area: "picture";
+        }
+
+        .footer {
+            grid-area: "footer";
+        }
+
+        .main-item {
+            display: flex;
+            border: 3px solid blue;
+            flex-direction: row;
+        }
+
+        #weather-image {
+            background-image: url("assets/noaa.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 500px;
+        }
+
+
+
+        /* Blogs Grid */
 
         #blog-preview-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
             grid-template-areas:
-                "b1 b2"
-                "b3 b4";
+                "blog-1 blog-2"
+                "blog-3 blog-4";
             border: 5px solid rgba(4, 0, 255, 0.521);
         }
 
@@ -46,18 +88,8 @@
             height: 200px;
         }
 
-        #main-item {
-            display: flex;
-        }
-
-        #main-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            grid-template-areas:
-                "main-1 main-2"
-                "main-3 main-4";
-            border: 2px solid rgb(255, 0, 0);
+        #header-text {
+            display: inline-block;
         }
     </style>
 
@@ -66,43 +98,40 @@
 
 <body>
 
-    <!--
+    <div class="main-grid">
 
-    <div id="main-grid">
-
-        <nav class="main-item">
-            <h1><em>Blog Title</em></h1>
-            Navigation bar
-        </nav>
-
-        <footer class="main-item">
-            Footer
-        </footer>
-    </div>
-
-    -->
-
-    <h1>Weather Forecasting</h1>
-
-    <h2 style="color: #777777;">Articles</h2>
-
-    <div id="blog-preview-grid">
-        <div class="blog-preview">
-            <p>First blog!</p>
-            <p><a href="blog-1">Read More!</a></p>
+        <div id="header-text" class="header main-item">
+            <h1>The Science of Weather Forecasting: Techniques, Models, and Tools</h1>
+            Explore the cutting-edge techniques meteorologists use to forecast weather,
+            from traditional methods to advanced technology-driven models.
         </div>
-        <div class="blog-preview">
-            <p>Second blog!</p>
-            <p><a href="blog-1">Read More!</a></p>
+
+        <div id="weather-image" class="picture main-item"></div>
+
+        <div>
+            <h2 style="color: #777777;">Articles</h2>
         </div>
-        <div class="blog-preview">
-            <p>Third blog!</p>
-            <p><a href="blog-1">Read More!</a></p>
+
+        <div id="blog-preview-grid" class="blogs">
+            <div class="blog-preview">
+                <p>First blog!</p>
+                <p><a href="blog-1">Read More!</a></p>
+            </div>
+            <div class="blog-preview">
+                <p>Second blog!</p>
+                <p><a href="blog-1">Read More!</a></p>
+            </div>
+            <div class="blog-preview">
+                <p>Third blog!</p>
+                <p><a href="blog-1">Read More!</a></p>
+            </div>
+            <div class="blog-preview">
+                <p>Fourth blog!</p>
+                <p><a href="blog-1">Read More!</a></p>
+            </div>
         </div>
-        <div class="blog-preview">
-            <p>Fourth blog!</p>
-            <p><a href="blog-1">Read More!</a></p>
-        </div>
+
+        <div class="footer main-item">Footer</div>
     </div>
 
 </body>
