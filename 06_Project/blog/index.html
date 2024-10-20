@@ -21,14 +21,20 @@
 
         .main-grid {
             display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(5, 1fr);
+            width: 80vw;
+            height: 1fr;
+            margin: auto;
+
+            grid-template-columns: 80vw;
+            grid-template-rows: 250px 1fr 1fr 120px;
+
             grid-template-areas:
                 "header"
                 "picture"
                 "blogs"
                 "footer";
-            border: 2px solid rgb(255, 0, 0);
+
+            border: 2px solid rgb(255, 255, 255);
         }
 
         .header {
@@ -49,7 +55,7 @@
 
         .main-item {
             display: flex;
-            border: 3px solid blue;
+            border: 3px solid rgb(255, 255, 255);
             flex-direction: row;
         }
 
@@ -72,11 +78,11 @@
             grid-template-areas:
                 "blog-1 blog-2"
                 "blog-3 blog-4";
-            border: 5px solid rgba(4, 0, 255, 0.521);
+            border: 5px solid rgba(255, 255, 255, 0.521);
         }
 
         .blog-preview {
-            display: flex;
+            display: inline-block;
             flex-direction: row;
             justify-content: center;
             align-items: center;
@@ -85,11 +91,26 @@
             margin: 5px;
 
             width: 1fr;
-            height: 200px;
+            height: 220px;
         }
 
         #header-text {
             display: inline-block;
+        }
+
+        .subscribe-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            padding: 10px;
+        }
+
+        .read-more {
+            background-color: #4e4caf;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 
@@ -104,34 +125,60 @@
             <h1>The Science of Weather Forecasting: Techniques, Models, and Tools</h1>
             Explore the cutting-edge techniques meteorologists use to forecast weather,
             from traditional methods to advanced technology-driven models.
+
+            <div class="subscribe-container">
+                <input type="email" class="email-input" placeholder="Enter your email" required>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
         </div>
 
         <div id="weather-image" class="picture main-item"></div>
 
-        <div>
-            <h2 style="color: #777777;">Articles</h2>
-        </div>
-
         <div id="blog-preview-grid" class="blogs">
             <div class="blog-preview">
-                <p>First blog!</p>
-                <p><a href="blog-1">Read More!</a></p>
+                <h3>The Basics of Weather Forecasting</h3>
+                <p>Learn the fundamentals of predicting weather,
+                    including observational methods and advanced numerical models.</p>
+                <br>
+                <a href="blog.html" class="read-more">Read More</a>
             </div>
             <div class="blog-preview">
-                <p>Second blog!</p>
-                <p><a href="blog-1">Read More!</a></p>
+                <h3>The Impact of Climate Change on Weather Patterns</h3>
+                <p>Explore how global climate change is affecting weather patterns and influencing the accuracy of
+                    weather predictions.</p>
+                <a href="climate-change-weather.html" class="read-more">Read More</a>
             </div>
+
             <div class="blog-preview">
-                <p>Third blog!</p>
-                <p><a href="blog-1">Read More!</a></p>
+                <h3>How Satellites Revolutionized Weather Forecasting</h3>
+                <p>Satellites have transformed our ability to monitor the atmosphere from space. Learn about their role
+                    in weather prediction.</p>
+                <a href="satellites-weather.html" class="read-more">Read More</a>
             </div>
+
             <div class="blog-preview">
-                <p>Fourth blog!</p>
-                <p><a href="blog-1">Read More!</a></p>
+                <h3>The Future of AI in Weather Forecasting</h3>
+                <p>Artificial intelligence is making waves in meteorology. Discover how AI is enhancing the accuracy and
+                    speed of weather forecasts.</p>
+                <a href="ai-weather-forecasting.html" class="read-more">Read More</a>
             </div>
         </div>
 
-        <div class="footer main-item">Footer</div>
+        <div class="footer main-item">
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-social">
+                        <h3>Follow Us</h3>
+                        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Weather Forecasting Blog. Pictures from Unsplash. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
     </div>
 
 </body>
