@@ -1,0 +1,52 @@
+
+body {
+    background: white;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.main-grid {
+    display: grid;
+    width: 80vw;
+    height: 1fr;
+    margin: auto;
+
+    grid-template-columns: 80vw;
+    grid-template-rows: 70px 250px 1fr 1fr 120px;
+
+    grid-template-areas:
+        "nav"
+        "header"
+        "picture"
+        "blogs"
+        "footer";
+
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.nav {
+    grid-area: "nav";
+}
+
+.header {
+    grid-area: "header";
+}
+
+.blogs {
+    grid-area: "blogs";
+}
+
+.picture {
+    grid-area: "picture";
+}
+
+.footer {
+    grid-area: "footer";
+}
+
+.main-item {
+    display: flex;
+    border: 3px solid rgb(255, 255, 255);
+    flex-direction: row;
+}
+

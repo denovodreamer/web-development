@@ -1,0 +1,50 @@
+
+
+
+.blog-preview-grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+
+    align-items: center;
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+
+    grid-template-areas:
+        "blog-preview-image blog-preview-text";
+
+    border: 2px solid rgb(221, 221, 221);
+
+}
+
+
+.blog-preview-text {
+    grid-area: "blog-preview-text";
+}
+
+.blog-preview-image {
+    grid-area: "blog-preview-image";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80%;
+    width: auto;
+}
+
+.weather-image-1 {
+    background-image: url("../assets/weather-1.avif");
+}
+
+.weather-image-2 {
+    background-image: url("../assets/weather-2.avif");
+}
+
+.weather-image-3 {
+    background-image: url("../assets/weather-3.avif");
+}
+
+.weather-image-4 {
+    background-image: url("../assets/weather-4.avif");
+}

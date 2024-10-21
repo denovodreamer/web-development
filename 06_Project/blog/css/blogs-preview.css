@@ -1,0 +1,39 @@
+#blog-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "blog-1 blog-2"
+        "blog-3 blog-4";
+    border: 5px solid rgba(255, 255, 255, 0.521);
+    margin: 0.15fr;
+}
+
+.blog-preview {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid rgb(221, 221, 221);
+    margin: 5px;
+
+    width: 1fr;
+    height: 220px;
+}
+
+#header-text {
+    display: inline-block;
+}
+
+
+
+.read-more {
+    background-color: #4e4caf;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
