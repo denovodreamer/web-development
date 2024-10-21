@@ -12,7 +12,7 @@ body {
     margin: auto;
 
     grid-template-columns: 80vw;
-    grid-template-rows: 70px 250px 1fr 1fr 120px;
+    grid-template-rows: 70px 140px 1fr 1fr 120px;
 
     grid-template-areas:
         "nav"
@@ -38,6 +38,8 @@ body {
 
 .picture {
     grid-area: "picture";
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
@@ -48,5 +50,6 @@ body {
     display: flex;
     border: 3px solid rgb(255, 255, 255);
     flex-direction: row;
+
 }
 
