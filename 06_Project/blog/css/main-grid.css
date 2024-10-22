@@ -1,4 +1,11 @@
 
+
+
+@import "main-grid-items.css";
+@import "blogs-preview.css";
+@import "blogs-preview-card.css";
+
+
 body {
     background: white;
     font-size: 14px;
