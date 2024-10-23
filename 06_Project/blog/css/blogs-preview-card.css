@@ -1,11 +1,9 @@
 
 
-
 .blog-preview-grid {
     display: grid;
     width: 100%;
     height: 100%;
-
 
     align-items: center;
 
@@ -16,7 +14,24 @@
         "blog-preview-image blog-preview-text";
 
     border: 2px solid rgb(221, 221, 221);
+}
 
+
+@media(max-width:1000px) {
+    .blog-preview-grid {
+        display: grid;
+
+        align-items: center;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 100px;
+
+        grid-template-areas:
+            "blog-preview-image"
+            "blog-preview-text";
+
+        border: 2px solid rgb(221, 221, 221);
+    }
 }
 
 
@@ -31,6 +46,13 @@
     background-position: center;
     height: 80%;
     width: auto;
+}
+
+
+@media(max-width:1500px) {
+    .blog-preview-image {
+        display: none;
+    }
 }
 
 .weather-image-1 {

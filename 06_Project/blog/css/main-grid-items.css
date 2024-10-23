@@ -22,6 +22,12 @@ nav a:hover {
     padding: 10px;
 }
 
+@media(max-width:1000px) {
+    .subscribe-container {
+        display: none;
+    }
+}
+
 #weather-image {
     background-image: url("../assets/noaa.jpg");
     background-size: contain;
@@ -29,6 +35,13 @@ nav a:hover {
     background-position: center;
     height: 500px;
 }
+
+@media(max-width:1000px) {
+    #weather-image {
+        display: none;
+    }
+}
+
 
 .follow-icon {
     height: 15px;
