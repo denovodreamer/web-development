@@ -1,9 +1,24 @@
+
+
+@import "nav-bar.css";
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #ffffff;
     color: #333;
 }
+
+.main-grid {
+    display: grid;
+    width: 80vw;
+    height: 1fr;
+    margin: auto;
+
+    border: 2px solid rgb(255, 255, 255);
+}
+
 
 .blog-post {
     display: inline-block;
