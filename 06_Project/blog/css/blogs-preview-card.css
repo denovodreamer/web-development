@@ -24,7 +24,7 @@
         align-items: center;
 
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 100px;
+        grid-template-rows: 350px 250px;
 
         grid-template-areas:
             "blog-preview-image"
@@ -46,13 +46,6 @@
     background-position: center;
     height: 80%;
     width: auto;
-}
-
-
-@media(max-width:1500px) {
-    .blog-preview-image {
-        display: none;
-    }
 }
 
 .weather-image-1 {

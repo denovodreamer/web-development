@@ -24,19 +24,6 @@
     }
 }
 
-/* .blog-preview {
-    display: inline-block;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    border: 2px solid rgb(221, 221, 221);
-    margin: 5px;
-
-    width: 1fr;
-    height: 220px;
-} */
-
 
 #header-text {
     display: inline-block;
@@ -49,10 +36,4 @@
     text-decoration: none;
     border-radius: 5px;
 }
-
-/* @media(max-width:1000px) {
-    .read-more  {
-        display: none;
-    }
-} */
 

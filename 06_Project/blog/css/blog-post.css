@@ -10,15 +10,6 @@ body {
     color: #333;
 }
 
-.main-grid {
-    display: grid;
-    width: 80vw;
-    height: 1fr;
-    margin: auto;
-
-    border: 2px solid rgb(255, 255, 255);
-}
-
 
 .blog-post {
     display: inline-block;
@@ -27,6 +18,8 @@ body {
     max-width: 100%;
     margin: 0 auto;
 }
+
+
 
 h1 {
     color: #000000;
@@ -54,3 +47,69 @@ p {
     width: 4%
 }
 
+
+
+.main-grid {
+    display: grid;
+    width: 80vw;
+    height: 1fr;
+    margin: auto;
+
+    grid-template-columns: 80vw;
+    grid-template-rows: 70px 200px 1fr 1000px 300px 60px;
+
+    grid-template-areas:
+        "nav"
+        "header"
+        "image"
+        "post"
+        "author"
+        "footer";
+
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+.nav {
+    grid-area: "nav";
+}
+
+.header {
+    grid-area: "header";
+}
+
+.image {
+    grid-area: "image";
+}
+
+.post {
+    grid-area: "post";
+}
+
+.author {
+    grid-area: "author";
+}
+
+.footer {
+    grid-area: "footer";
+}
+
+.main-item {
+    display: flex;
+    border: 3px solid rgb(255, 255, 255);
+    flex-direction: row;
+}
+
+.image {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
